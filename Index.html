@@ -1,88 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPPTECH</title>
-    <link rel="stylesheet" href="style.css" class="rel href">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d3b58aa69a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-   
-    <section id="header">
-        <a href="#" ><h3>CPP Tech</h3></a>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CPPTECH</title>
+		<link rel="stylesheet" href="/assets/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://kit.fontawesome.com/d3b58aa69a.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
 
-        <div>
-            <ul class="navbar" id="navbar">
-                <li><a class="active" href="Index.html">Home</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-        </div>
-    </section> 
+	<body>
+		<nav class="navbar navbar-expand-lg bg-light fixed-top fs-6">
+			<div
+				class="container-fluid mx-4 d-flex justify-content-space-evenly py-2"
+			>
+				<a class="navbar-brand me-auto" href="#">CPPTECH</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item mx-2">
+							<a class="nav-link active" href="#">Home</a>
+						</li>
 
-    <section id="hero">
-        <h4>Trade-in-offer</h4>
-        <h2>Super Value deals</h2>
-        <h1>On all products</h1>
-        <p>save more with coupons & up to 70% OFF!</p>
-        <button>Explore</button>
-    </section>
+						<li class="nav-item mx-2">
+							<!-- same as auction details -->
+							<a class="nav-link" href="./pages/about.html">About us</a>
+						</li>
+						<li class="nav-item mx-2">
+							<!-- same as auction details -->
+							<a class="nav-link" href="./pages/products.html">Products</a>
+						</li>
+					</ul>
 
-<section id="feature" class="section-p1">
-    <div class="fe-box">
-        <img src="cyber1.jpg" alt="">
-        <h6>Free Shipping</h6>
-    </div>
-    <div class="fe-box">
-        <img src="cyber2.jpg" alt="">
-        <h6>Free Shipping</h6>
-    </div>
-    <div class="fe-box">
-        <img src="cyber3.jpg" alt="">
-        <h6>Free Shipping</h6>
-    </div>
-    <div class="fe-box">
-        <img src="cyber4.jpg" alt="">
-        <h6>Free Shipping</h6>
-    </div>
-    <div class="fe-box">
-        <img src="cyber5.jpg" alt="">
-        <h6>Free Shipping</h6>
-    </div>
-</section>
+					<div class="top-control d-flex gap-3">
+						<a href="./pages/login.html">
+							<button class="btn btn-md btn-primary mt-md-0">Login</button>
+						</a>
+						<a href="./pages/cart.html">
+							<button class="btn btn-md btn-primary mt-md-0">My Cart</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
 
-<section id="Product1" class="section-p1">
-    <h2>Feature Product</h2>
-    <p>Summer Collection New Modern Design</p>
-    <div class="pro-container">
-        <div class="pro">
-            <img src="cyber1.jpg" alt="">
-            <div class="description">
-                <span>adidas</span>
-                <h5>Cartoon Astrounut</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$74</h4>
-                <div>
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
+		<header id="hero" class="px-3">
+			<div class="heroText px-3 py-5">
+				<h4>Trade-in-offer</h4>
+				<h2>Super Value deals</h2>
+				<h1>On all Cybersecurity products</h1>
+				<p>Save more with coupons & up to 40% OFF!</p>
+				<button>Explore</button>
+			</div>
+		</header>
+
+
+		<main class="container mt-5">
+         <div class="banner py-3 mt-5">
+            <h1 class="display-5 fw-bold">Our Products</h1>
+         </div>
+			<div class="container">
+				<!-- CAROUSEL -->
+				<div
+					id="productCarousel"
+					data-bs-ride="carousel"
+					class="carousel w-100 w-md-50 slide rounded-3 mb-5"
+				>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#productCarousel"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#productCarousel"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#productCarousel"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#productCarousel"
+							data-bs-slide-to="3"
+							aria-label="Slide 4"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#productCarousel"
+							data-bs-slide-to="4"
+							aria-label="Slide 5"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img
+								src="./assets/img/network-security.jpg"
+								class="d-block w-100 rounded-4"
+								alt="Network Security"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Network Security</h5>
+								<p>
+									Network Security focuses on safeguarding the organization's
+									network infrastructure
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="./assets/img/endpoint-security.jpg"
+								class="d-block w-100 rounded-4"
+								alt="Endpoint Security"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Endpoint Security</h5>
+								<p>
+									The protection of individual devices (endpoints), such as
+									computers, smartphones, and servers, from cybersecurity
+									threats.
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="./assets//img/iam.jpg"
+								class="d-block w-100 rounded-4"
+								alt="Identity Access Management"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Identity Access Management</h5>
+								<p>
+									A framework of policies, processes, and technologies that
+									ensures the right individuals or systems have the appropriate
+									access to resources within an organization.
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="./assets/img/Data Security and Compliance.png"
+								class="d-block w-100 rounded-4"
+								alt="Data Security and Compliance"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Data Security and Compliance</h5>
+								<p>
+									Data Security and Compliance involve measures and practices
+									implemented to protect sensitive data from unauthorized
+									access, disclosure, alteration, and destruction.
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="./assets/img/security-ops.jpg"
+								class="d-block w-100 rounded-4"
+								alt="Security Operations and Management"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Security Operations and Management</h5>
+								<p>
+									Security Operations and Management encompass the strategic
+									planning, execution, and oversight of an organization's
+									cybersecurity activities.
+								</p>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#productCarousel"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#productCarousel"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+         <!-- WRITEUPS -->
+         <section class="mb-5 py-5">
+
+            <div class="row justify-content-center align-items-center g-5 mb-5">
+               <div class="col-12 col-md-6">Understanding Cybersecurity</div>
+               <div class="col-12 col-md-6">
+                  In an era dominated by digital innovation, the significance of
+                  cybersecurity cannot be overstated. Cybersecurity is the practice of
+                  protecting computer systems, networks, and digital data from
+                  unauthorized access, attacks, and damage. It encompasses a broad range
+                  of technologies, processes, and practices designed to defend against
+                  cyber threats that continue to evolve in complexity and
+                  sophistication.
+               </div>
             </div>
-        </div>
+            <div
+               class="row flex-row-reverse justify-content-center align-items-center g-5 mb-5"
+            >
+               <div class="col-12 col-md-6">Cybersecurity in the Digital Age</div>
+               <div class="col-12 col-md-6">
+                  As our dependence on digital technology continues to grow, the
+                  importance of cybersecurity becomes increasingly paramount.
+                  Cybersecurity is not merely a technical concern but a critical aspect
+                  of safeguarding our digital way of life. It is integral to protecting
+                  personal information, financial transactions, intellectual property,
+                  and the infrastructure that underpins our interconnected world.
+               </div>
+            </div>
+         </section>
 
-    </div>
-</section>
+		</main>
 
-    <script src="script.js"></script>
-</body>
+		<!-- FOOTER -->
+		<footer class="container-fluid footer bg-black text-white px-md-5">
+			<div class="row mx-md-5 pt-5">
+				<div class="col-12 col-md-6 col-lg-3 pt-5">
+					<div class="access">
+						<h4 class="mb-3">Join Newsletter</h4>
+						<p class="mb-4">
+							Subscribe our newsletter to get more free cybersecurity products
+							and resource.
+						</p>
+						<input
+							type="text"
+							name="subscribe"
+							class="form-control"
+							placeholder="your email"
+						/>
+						<button class="btn btn-danger btn-md mt-3" type="submit">
+							Submit
+						</button>
+
+						<div class="socials mt-4">
+							<a class="me-4" href="#"
+								><i class="fa fs-4 fa-solid fa-twitter"></i
+							></a>
+							<a class="me-4" href="#"
+								><i class="fa fs-4 fa-solid fa-facebook"></i
+							></a>
+							<a class="me-4" href="#"
+								><i class="fa fs-4 fa-solid fa-whatsapp"></i
+							></a>
+							<a class="me-4" href="#"
+								><i class="fa fs-4 fa-solid fa-instagram"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 pt-5">
+					<div class="links">
+						<h4 class="mb-4">Important Links</h4>
+
+						<div class="important-links d-grid gap-3">
+							<a href="">All Products</a>
+							<a href="">How It Works</a>
+							<a href="">My Account</a>
+							<a href="">About Company</a>
+							<a href="">Our News Feed</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 pt-5">
+					<div class="about">
+						<div class="display-6 mb-4">CPPTECH</div>
+
+						<p>Add. 168/170, Surulere Avenue, Lagos Nigeria</p>
+						<p>Phone: +029169852 / +88017600000</p>
+						<p>Email: info.example@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="row border-top mt-5">
+				<div
+					class="col-12 d-grid d-md-flex justify-content-between align-items-center pt-3 px-3"
+				>
+					<p>Copyright: CPPTECH &copy;2022</p>
+
+					<p>
+						We accept:
+						<span class="d-flex justify-content-between">
+							<img
+								src="./assets/images/footer-pay1.png"
+								alt="VISA"
+								class="img-fluid mx-2"
+							/>
+							<img
+								src="./assets/images/footer-pay2.png"
+								alt="BLU"
+								class="img-fluid mx-2"
+							/>
+							<img
+								src="./assets/images/footer-pay3.png"
+								alt="VENMO"
+								class="img-fluid mx-2"
+							/>
+							<img
+								src="./assets/images/footer-pay4.png"
+								alt="PayPal"
+								class="img-fluid mx-2"
+							/>
+							<img
+								src="./assets/images/footer-pay5.png"
+								alt="MasterCard"
+								class="img-fluid mx-2"
+							/>
+						</span>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
