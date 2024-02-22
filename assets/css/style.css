@@ -1,0 +1,152 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none !important;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+#nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 50px;
+}
+
+.navlinks {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+   margin-bottom: 0px;
+}
+
+.navlinks li {
+   list-style: none;
+   padding: 0 20px;
+}
+
+.navlinks li a {
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 600;
+   color: black;
+   transition: 0.3s ease;
+   position: relative;
+}
+
+.navlinks li a:hover,
+.navlinks li a.active {
+   color: #ff851b;
+}
+
+.navlinks li a.active::after,
+.navlinks li a:hover::after {
+   content: "";
+   width: 50%;
+   height: 2px;
+   background-color: #ff851b;
+   position: absolute;
+   bottom: -4px;
+   left: 0px;
+}
+
+.navbuttons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 25px;
+}
+
+.navlogin {
+   width: 80px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #ff851b;
+   color: white;
+   text-decoration: none;
+
+}
+
+.navcart {
+   border: 1px solid #ff851b;
+   height: 40px;
+   width: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+}
+
+#hero {
+   background-image: url("/assets/img/headerBg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   width: 100vw;
+   padding: 0;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+}
+
+.heroText {
+   color: white;
+   background-color: #463d35d6;
+   display: grid;
+   text-align: left;
+   box-shadow: 0 5px 15px(0, 0, 0, 0.06);
+   font-weight: 300;
+   font-family: roboto;
+   border-radius: 20px;
+}
+
+#header h3 {
+   color: #ff851b;
+   text-decoration: none;
+}
+
+#header a {
+   text-decoration: none;
+}
+
+#hero h4 {
+   padding-bottom: 15px;
+}
+
+#hero h1 {
+   color: #ff851b;
+}
+
+#hero button {
+   margin-top: 10px;
+   background-color: #ff851b;
+   color: #f7efe8;
+   border: none;
+   padding: 12px 25px;
+   font-weight: bold;
+   background-repeat: no-repeat;
+   cursor: pointer;
+   font-size: 15px;
+}
+
+.carousel-caption {
+   background-color: rgba(39, 38, 37, 0.73);
+}
+.product_card {
+   height: 400px !important;
+   max-height: 400px;
+}
+
+.product_image_container {
+   height: 160px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
