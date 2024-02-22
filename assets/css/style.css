@@ -150,3 +150,6 @@ body {
    justify-content: center;
    align-items: center;
 }
+.cart-receipt {
+   border: 1.5px dashed black;
+}

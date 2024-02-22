@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CPPTECH - About us</title>
@@ -22,8 +22,8 @@
 			crossorigin="anonymous"
 		></script>
 	</head>
-<body>
-   <nav class="navbar navbar-expand-lg bg-light fixed-top fs-6">
+	<body>
+		<nav class="navbar navbar-expand-lg bg-light fixed-top fs-6">
 			<div
 				class="container-fluid mx-4 d-flex justify-content-space-evenly py-2"
 			>
@@ -59,16 +59,136 @@
 						<a href="./login.html">
 							<button class="btn btn-md btn-primary mt-md-0">Login</button>
 						</a>
-						<a href="./cart.html">
-							<button class="btn btn-md btn-primary mt-md-0">My Cart</button>
-						</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 
+		<main class="container my-5 py-5">
+			<h1 class="display-6 mb-5">My Cart</h1>
 
-      <footer class="container-fluid footer bg-black text-white px-md-5">
+			<div class="container p-3 px-md-4 border-success-subtle">
+				<!-- Single cart item -->
+            <div class="d-flex align-items-center gap-2 gap-md-4">
+               <div class="row align-items-center my-4">
+                  <div class="d-none col-2 d-md-block">
+                     <img
+                        src="../assets/img/network-security/cisco-asa.avif"
+                        alt="cisco-asa"
+                        class="img-fluid"
+                     />
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-5 fs-4 d-flex align-items-center">
+                     Cisco Authentication Security Services
+                     <span
+                        class="d-none d-lg-block badge ms-2 fs-6 fw-normal rounded-pill text-bg-info"
+                        >Network Security</span
+                     >
+                  </div>
+
+                  <div
+                     class="col-2 col-md-1 col-lg-2 fs-4 d-flex align-items-center gap-3"
+                  >
+                     <small class="d-none d-lg-block fw-normal fs-6">Unit Price</small
+                     >$300
+                  </div>
+
+                  <div class="col-2 col-lg-1">x3</div>
+
+                  <div
+                  class="col col-md-1 col-lg-2 fw-bold fs-4 d-flex align-items-center justify-content-end gap-3"
+                  >
+                  <small class="d-none d-lg-block fw-normal fs-6">Cost Price</small
+                     >$900
+                  </div>
+               </div>
+               <button class="btn btn-danger">
+                  <i class="fa fa-trash-alt" aria-hidden="true"></i>
+               </button>
+            </div>
+            
+            <!-- Single cart item -->
+            <div class="d-flex align-items-center gap-2 gap-md-4">
+               <div class="row align-items-center my-4">
+                  <div class="d-none col-2 d-md-block">
+                     <img
+                        src="../assets/img/network-security/cisco-asa.avif"
+                        alt="cisco-asa"
+                        class="img-fluid"
+                     />
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-5 fs-4 d-flex align-items-center">
+                     Cisco Authentication Security Services
+                     <span
+                        class="d-none d-lg-block badge ms-2 fs-6 fw-normal rounded-pill text-bg-info"
+                        >Network Security</span
+                     >
+                  </div>
+
+                  <div
+                     class="col-2 col-md-1 col-lg-2 fs-4 d-flex align-items-center gap-3"
+                  >
+                     <small class="d-none d-lg-block fw-normal fs-6">Unit Price</small
+                     >$300
+                  </div>
+
+                  <div class="col-2 col-lg-1">x3</div>
+
+                  <div
+                     class="col col-md-1 col-lg-2 fw-bold fs-4 d-flex align-items-center justify-content-end gap-3"
+                  >
+                     <small class="d-none d-lg-block fw-normal fs-6">Cost Price</small
+                     >$900
+                  </div>
+               </div>
+               <button class="btn btn-danger">
+                  <i class="fa fa-trash-alt" aria-hidden="true"></i>
+               </button>
+            </div>
+
+			</div>
+
+			<div class="bg-light container py-3 mt-3 rounded-3 cart-receipt fw-bold">
+				<div class="row align-items-center justify-content-end text-end">
+					<div class="col-4">Sub Total:</div>
+					<div class="col-4 fs-3">$ 1800</div>
+				</div>
+				<div class="row align-items-center justify-content-end text-end">
+					<div class="col-4">Tax:</div>
+					<div class="col-4 fs-5">1.8%</div>
+				</div>
+				<div class="row align-items-center justify-content-end text-end">
+					<div class="col-4">Grand Total:</div>
+					<div class="col-4 fs-2">$ 1890</div>
+				</div>
+			</div>
+
+         <!-- When Logged in, The checkout button appears -->
+            <div class="d-flex gap-2 my-3 justify-content-end">
+               <button
+               type="button"
+               name="clear-cart"
+               id="clear-cart"
+               class="btn btn-danger"
+               >
+               Clear cart
+            </button>
+            <a
+               name="checkout"
+               id="checkout"
+               class="btn btn-success"
+               href="#"
+               role="button"
+               >Checkout</a
+            >
+            </div>
+
+
+		</main>
+
+		<footer class="container-fluid footer bg-black text-white px-md-5">
 			<div class="row mx-md-5 pt-5">
 				<div class="col-12 col-md-6 col-lg-3 pt-5">
 					<div class="access">
@@ -172,6 +292,5 @@
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 			crossorigin="anonymous"
 		></script>
-
-</body>
+	</body>
 </html>
