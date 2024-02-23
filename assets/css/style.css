@@ -153,3 +153,8 @@ body {
 .cart-receipt {
    border: 1.5px dashed black;
 }
+
+.editBtn{
+   position: absolute;
+   right: 6.5px;
+}

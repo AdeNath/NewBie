@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CPPTECH - About us</title>
@@ -22,12 +22,14 @@
 			crossorigin="anonymous"
 		></script>
 	</head>
-<body>
-   <nav class="navbar navbar-expand-lg bg-light fixed-top fs-6">
+	<body>
+		<nav class="navbar navbar-expand-lg bg-light fixed-top fs-6">
 			<div
 				class="container-fluid mx-4 d-flex justify-content-space-evenly py-2"
 			>
-				<a class="navbar-brand me-auto" href="#">CPPTECH</a>
+				<a class="navbar-brand me-auto" href="#">
+					CPPTECH <span class="badge badge-pill badge-info bg-info">Admin</span>
+				</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -54,117 +56,701 @@
 							<a class="nav-link" href="./products.html">Products</a>
 						</li>
 					</ul>
-
-					<div class="top-control d-flex gap-3">
-						<a href="./login.html">
-							<button class="btn btn-md btn-primary mt-md-0">Login</button>
-						</a>
-						<a href="./cart.html">
-							<button class="btn btn-md btn-primary mt-md-0">My Cart</button>
-						</a>
-					</div>
 				</div>
 			</div>
 		</nav>
 
-
-      <footer class="container-fluid footer bg-black text-white px-md-5">
-			<div class="row mx-md-5 pt-5">
-				<div class="col-12 col-md-6 col-lg-3 pt-5">
-					<div class="access">
-						<h4 class="mb-3">Join Newsletter</h4>
-						<p class="mb-4">
-							Subscribe our newsletter to get more free cybersecurity products
-							and resource.
-						</p>
-						<input
-							type="text"
-							name="subscribe"
-							class="form-control"
-							placeholder="your email"
-						/>
-						<button class="btn btn-danger btn-md mt-3" type="submit">
-							Submit
-						</button>
-
-						<div class="socials mt-4">
-							<a class="me-4" href="#"
-								><i class="fa fs-4 fa-solid fa-twitter"></i
-							></a>
-							<a class="me-4" href="#"
-								><i class="fa fs-4 fa-solid fa-facebook"></i
-							></a>
-							<a class="me-4" href="#"
-								><i class="fa fs-4 fa-solid fa-whatsapp"></i
-							></a>
-							<a class="me-4" href="#"
-								><i class="fa fs-4 fa-solid fa-instagram"></i
-							></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-3 pt-5">
-					<div class="links">
-						<h4 class="mb-4">Important Links</h4>
-
-						<div class="important-links d-grid gap-3">
-							<a href="">All Products</a>
-							<a href="">How It Works</a>
-							<a href="">My Account</a>
-							<a href="">About Company</a>
-							<a href="">Our News Feed</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-3 pt-5">
-					<div class="about">
-						<div class="display-6 mb-4">CPPTECH</div>
-
-						<p>Add. 168/170, Surulere Avenue, Lagos Nigeria</p>
-						<p>Phone: +029169852 / +88017600000</p>
-						<p>Email: info.example@gmail.com</p>
-					</div>
-				</div>
+		<main class="my-5 pt-5 container">
+			<div>
+				<h1 class="display-6">Welcome Admin</h1>
 			</div>
-			<div class="row border-top mt-5">
+
+			<section class="my-3 container products">
+				<div class="banner mb-4">
+					<h1 class="fs-3">All Products</h1>
+				</div>
+
+				<h2 class="mt-5 mb-3 fs-4">Network Security</h2>
 				<div
-					class="col-12 d-grid d-md-flex justify-content-between align-items-center pt-3 px-3"
+					class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 mb-5"
 				>
-					<p>Copyright: CPPTECH &copy;2022</p>
-
-					<p>
-						We accept:
-						<span class="d-flex justify-content-between">
-							<img
-								src="./assets/images/footer-pay1.png"
-								alt="VISA"
-								class="img-fluid mx-2"
-							/>
-							<img
-								src="./assets/images/footer-pay2.png"
-								alt="BLU"
-								class="img-fluid mx-2"
-							/>
-							<img
-								src="./assets/images/footer-pay3.png"
-								alt="VENMO"
-								class="img-fluid mx-2"
-							/>
-							<img
-								src="./assets/images/footer-pay4.png"
-								alt="PayPal"
-								class="img-fluid mx-2"
-							/>
-							<img
-								src="./assets/images/footer-pay5.png"
-								alt="MasterCard"
-								class="img-fluid mx-2"
-							/>
-						</span>
-					</p>
+					<div class="col">
+						<a href="./productId.html">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/network-security/cisco-asa.avif"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Cisco Asa</h4>
+									<p class="card-text">
+										Cisco ASA (Adaptive Security Appliance) by Cisco Systems
+										integrates firewall, antivirus, intrusion prevention, VPN,
+										and more to secure networks and data centers, providing
+										comprehensive protection against various security threats.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/network-security/express-vpn.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Express VPN</h4>
+									<p class="card-text">
+										ExpressVPN is a Virtual Private Network (VPN) service that
+										ensures users a secure and private internet connection,
+										safeguarding their online activities through encryption and
+										anonymous browsing.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="./productId.html">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/network-security/imperva.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Imperva</h4>
+									<p class="card-text">
+										Imperva, a cybersecurity company, focuses on safeguarding
+										data and applications from cyber threats. Its services
+										encompass web application firewalls (WAF), data security,
+										DDoS protection, and other solutions, ensuring comprehensive
+										cybersecurity measures.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="./productId.html">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/network-security/modsecurity.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">ModSecurity</h4>
+									<p class="card-text">
+										ModSecurity is an open-source web application firewall (WAF)
+										module, crucial for bolstering web application security. It
+										defends against diverse web-based attacks, contributing to a
+										more resilient and protected online environment.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="./productId.html">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/network-security/nord-vpn.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">NordVPN</h4>
+									<p class="card-text">
+										NordVPN is a popular and widely used Virtual Private Network
+										(VPN) service that provides users with a secure and private
+										online connection.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/network-security/snort.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Snort</h4>
+									<p class="card-text">
+										Snort, an open-source network intrusion detection and
+										prevention system (IDS/IPS) developed by Cisco, is
+										extensively employed for real-time traffic analysis and
+										packet logging on IP networks.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/network-security/suricata.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Suricata</h4>
+									<p class="card-text">
+										Suricata is a real-time network traffic monitoring and
+										analysis tool, proficient in detecting and preventing
+										security threats. It stands out for its high-performance,
+										multi-threaded architecture, and compatibility with the
+										latest protocols and file formats.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
 				</div>
-			</div>
-		</footer>
+
+				<h2 class="mt-5 mb-3 display-6">Endpoint Security</h2>
+				<div
+					class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 mb-5"
+				>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/endpoint-security/acronis.png"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Acronis</h4>
+									<p class="card-text">
+										Acronis is a global technology company providing
+										cybersecurity and data protection solutions. Renowned for
+										backup and recovery tools, it safeguards data, ensures
+										business continuity, and defends against cyber threats.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/endpoint-security/bitdefender.webp"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">BitDefender</h4>
+									<p class="card-text">
+										Bitdefender, a global cybersecurity company, specializes in
+										advanced threat protection. Its solutions safeguard
+										individuals, businesses, and enterprises against various
+										cyber threats, including malware, ransomware, and phishing.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/endpoint-security/mcafee.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">McAfee Security</h4>
+									<p class="card-text">
+										McAfee, a global cybersecurity company, offers a variety of
+										security products safeguarding individuals, businesses, and
+										enterprises from cyber threats like viruses, malware,
+										ransomware, and online dangers.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/endpoint-security/mobileiron.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">MobileIron</h4>
+									<p class="card-text">
+										MobileIron, a cybersecurity company, specializes in securing
+										mobile devices and data in enterprise environments. Their
+										platform ensures secure access to corporate resources and
+										protects sensitive data, crucial in enterprise mobility
+										management.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/endpoint-security/norton.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Norton Security</h4>
+									<p class="card-text">
+										Norton, part of NortonLifeLock, is a renowned cybersecurity
+										company offering diverse products safeguarding individuals
+										and businesses from online threats such as malware, viruses,
+										ransomware, and phishing attacks. Known for its antivirus
+										and internet security solutions, Norton has a strong
+										industry reputation.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/endpoint-security/tripwire.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Tripwire</h4>
+									<p class="card-text">
+										Tripwire is a cybersecurity company specializing in
+										solutions for security configuration management, file
+										integrity monitoring, and compliance management. Its
+										products aid organizations in preserving system integrity,
+										detecting unauthorized changes, and ensuring compliance with
+										regulations and security policies.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<h2 class="mt-5 mb-3 display-6">
+					Identity and Access Management (IAM)
+				</h2>
+				<div
+					class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 mb-5"
+				>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/iam/azure.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Azure</h4>
+									<p class="card-text">
+										Azure, Microsoft's cloud computing platform, provides a
+										suite of services for virtual computing, storage, and
+										analytics. It empowers businesses to build, deploy, and
+										manage applications globally with scalability, reliability,
+										and security.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/iam/googleauth.png"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Google Authentication</h4>
+									<p class="card-text">
+										Google Authentication, or Google Authenticator, is a
+										two-factor authentication (2FA) solution. It boosts account
+										security by generating time-sensitive codes on mobile
+										devices. Users enter these codes along with passwords for
+										enhanced protection against unauthorized access.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/iam/okta.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Okta</h4>
+									<p class="card-text">
+										Okta is a cloud-based Identity and Access Management (IAM)
+										platform, offering Single Sign-On (SSO), multi-factor
+										authentication (MFA), and lifecycle management. It
+										streamlines user access across applications, ensuring
+										security and compliance.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/iam/secureid.png"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">SecureId</h4>
+									<p class="card-text">
+										RSA SecurID, commonly known as SecureID, is a widely-used
+										multi-factor authentication solution employing a token
+										system. It generates time-sensitive passcodes users enter
+										with passwords, adding an extra layer of protection against
+										unauthorized access to sensitive systems.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/iam/yubikey.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Yubikey</h4>
+									<p class="card-text">
+										YubiKey is a hardware authentication device supporting
+										various protocols like one-time passwords, FIDO U2F, and
+										smart card functionality. Plugged into USB or connected
+										wirelessly, it enhances security with a physical,
+										tamper-resistant token for secure system and service access.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<h2 class="mt-5 mb-3 display-6">Data Security and Compliance</h2>
+				<div
+					class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 mb-5"
+				>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/data-security/qualys.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Qualys</h4>
+									<p class="card-text">
+										Qualys is a leading cloud-based security and compliance
+										platform, specializing in vulnerability management. It
+										equips organizations with tools to assess, prioritize, and
+										remediate security risks. The scalable, centralized approach
+										helps monitor and protect IT infrastructure, ensuring
+										compliance with industry standards.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/data-security/tenable.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Tenable.io</h4>
+									<p class="card-text">
+										Tenable.io is a cybersecurity platform for proactive
+										vulnerability management. It identifies, prioritizes, and
+										mitigates risks, ensuring robust security postures and
+										compliance with industry regulations across diverse
+										environments.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/data-security/veracrypt.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">VeraCrypt</h4>
+									<p class="card-text">
+										VeraCrypt, open-source encryption software derived from
+										TrueCrypt, secures data with on-the-fly encryption, enhanced
+										algorithms, and password hashing. It encrypts containers or
+										entire disk partitions for reliable data security and
+										privacy.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/data-security/zscaler.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">ZScaler</h4>
+									<p class="card-text">
+										Zscaler is a cloud-native security platform delivering
+										secure access from any device or location. Specializing in
+										zero-trust network access, web security, and threat
+										protection, Zscaler's global cloud infrastructure ensures
+										scalable and efficient security, safeguarding against
+										evolving cyber threats.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<h2 class="mt-5 mb-3 display-6">Security Operations and Management</h2>
+				<div
+					class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 mb-5"
+				>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/security -management/anomali.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Anomali</h4>
+									<p class="card-text">
+										Anomali is a threat intelligence platform aiding
+										organizations in identifying and mitigating cyber threats.
+										It aggregates and analyzes threat data, offering actionable
+										intelligence for proactive threat detection, response, and
+										collaboration, enhancing cybersecurity posture against
+										emerging threats.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/security -management/splunk.png"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">Splunk</h4>
+									<p class="card-text">
+										Splunk, a leading data analytics and SIEM platform,
+										collects, indexes, and analyzes machine-generated data. It
+										offers insights into security events, operational
+										performance, and business metrics, aiding organizations in
+										detecting and responding to security incidents,
+										investigating anomalies, and gaining visibility into IT
+										infrastructure.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="">
+							<div class="card product_card rounded-4 p-2">
+								<div class="product_image_container">
+									<img
+										src="../assets//img/security -management//threatconect.jpg"
+										class="card-img-top rounded-4"
+										alt="..."
+									/>
+								</div>
+								<div class="card-body">
+									<h4 class="card-title">ThreatConnect</h4>
+									<p class="card-text">
+										ThreatConnect is a collaborative threat intelligence
+										platform centralizing data, automating workflows, and
+										providing analysis tools. It enhances cyber threat detection
+										and response, allowing organizations to share insights and
+										strengthen overall cybersecurity defenses.
+									</p>
+								</div>
+								<button type="button" class="editBtn btn btn-primary">
+									<i class="fas fa-edit"></i>
+								</button>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
 
 		<script src="script.js"></script>
 		<script
@@ -172,6 +758,5 @@
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 			crossorigin="anonymous"
 		></script>
-
-</body>
+	</body>
 </html>
