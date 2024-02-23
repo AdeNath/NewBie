@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>CPPTECH - About us</title>
+		<title>CPPTECH - Sign Up</title>
 		<link rel="stylesheet" href="/assets/css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,8 +22,8 @@
 			crossorigin="anonymous"
 		></script>
 	</head>
-<body>
-   <nav class="navbar navbar-expand-lg bg-light fixed-top fs-6">
+	<body>
+		<nav class="navbar navbar-expand-lg bg-light fixed-top fs-6">
 			<div
 				class="container-fluid mx-4 d-flex justify-content-space-evenly py-2"
 			>
@@ -59,112 +59,100 @@
 						<a href="./login.html">
 							<button class="btn btn-md btn-primary mt-md-0">Login</button>
 						</a>
-						<a href="./cart.html">
-							<button class="btn btn-md btn-primary mt-md-0">My Cart</button>
-						</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 
+		<main class="my-5 pt-5 container">
+			<div class="row mt-5">
+				<div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto">
+					<h1 class="text-center mb-5">Sign Up</h1>
 
-      <footer class="container-fluid footer bg-black text-white px-md-5">
-			<div class="row mx-md-5 pt-5">
-				<div class="col-12 col-md-6 col-lg-3 pt-5">
-					<div class="access">
-						<h4 class="mb-3">Join Newsletter</h4>
-						<p class="mb-4">
-							Subscribe our newsletter to get more free cybersecurity products
-							and resource.
-						</p>
-						<input
-							type="text"
-							name="subscribe"
-							class="form-control"
-							placeholder="your email"
-						/>
-						<button class="btn btn-danger btn-md mt-3" type="submit">
-							Submit
-						</button>
+					<form class="card border-primary">
+						<div class="card-body">
+							<div class="mb-3">
+								<label for="" class="form-label">Name</label>
+								<input
+									type="text"
+									name="name"
+									id="name"
+									class="form-control"
+									placeholder="Enter your name"
+									aria-describedby="nameHelpId"
+								/>
+								<small id="nameHelpId" class="d-none text-muted"
+									>Enter your name</small
+								>
+							</div>
 
-						<div class="socials mt-4">
-							<a class="me-4" href="#"
-								><i class="fa fs-4 fa-solid fa-twitter"></i
-							></a>
-							<a class="me-4" href="#"
-								><i class="fa fs-4 fa-solid fa-facebook"></i
-							></a>
-							<a class="me-4" href="#"
-								><i class="fa fs-4 fa-solid fa-whatsapp"></i
-							></a>
-							<a class="me-4" href="#"
-								><i class="fa fs-4 fa-solid fa-instagram"></i
-							></a>
+							<div class="mb-3">
+								<label for="" class="form-label">Email</label>
+								<input
+									type="email"
+									name="email"
+									id="email"
+									class="form-control"
+									placeholder="Enter your email"
+									aria-describedby="emailHelpId"
+								/>
+								<small id="emailHelpId" class="d-none text-muted"
+									>Enter your email</small
+								>
+							</div>
+
+							<div class="mb-4">
+								<label for="" class="form-label">Password</label>
+								<input
+									type="password"
+									name="password"
+									id="password"
+									class="form-control"
+									placeholder="Enter your password"
+									aria-describedby="passwordHelpId"
+								/>
+								<small id="passwordHelpId" class="d-none text-muted"
+									>Enter your password</small
+								>
+							</div>
+
+							<div class="mb-4">
+								<label for="" class="form-label">Confirm your Password</label>
+								<input
+									type="password"
+									name="confirm-password"
+									id="confirm-password"
+									class="form-control"
+									placeholder="Re-enter password"
+									aria-describedby="confirmPasswordHelpId"
+								/>
+								<small id="confirmPasswordHelpId" class="d-none text-muted"
+									>Confirm your password</small
+								>
+							</div>
+
+							<div class="d-grid gap-2">
+								<button
+									type="submit"
+									name="Login"
+									id=""
+									class="btn btn-primary"
+								>
+									Sign Up
+								</button>
+							</div>
+
+							<div class="d-flex mt-5 justify-content-center text-muted w-100">
+								<small
+									>Already have an account?
+									<a href="./signup.html">Login here</a></small
+								>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-3 pt-5">
-					<div class="links">
-						<h4 class="mb-4">Important Links</h4>
-
-						<div class="important-links d-grid gap-3">
-							<a href="">All Products</a>
-							<a href="">How It Works</a>
-							<a href="">My Account</a>
-							<a href="">About Company</a>
-							<a href="">Our News Feed</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-3 pt-5">
-					<div class="about">
-						<div class="display-6 mb-4">CPPTECH</div>
-
-						<p>Add. 168/170, Surulere Avenue, Lagos Nigeria</p>
-						<p>Phone: +029169852 / +88017600000</p>
-						<p>Email: info.example@gmail.com</p>
-					</div>
+					</form>
 				</div>
 			</div>
-			<div class="row border-top mt-5">
-				<div
-					class="col-12 d-grid d-md-flex justify-content-between align-items-center pt-3 px-3"
-				>
-					<p>Copyright: CPPTECH &copy;2022</p>
-
-					<p>
-						We accept:
-						<span class="d-flex justify-content-between">
-							<img
-								src="./assets/images/footer-pay1.png"
-								alt="VISA"
-								class="img-fluid mx-2"
-							/>
-							<img
-								src="./assets/images/footer-pay2.png"
-								alt="BLU"
-								class="img-fluid mx-2"
-							/>
-							<img
-								src="./assets/images/footer-pay3.png"
-								alt="VENMO"
-								class="img-fluid mx-2"
-							/>
-							<img
-								src="./assets/images/footer-pay4.png"
-								alt="PayPal"
-								class="img-fluid mx-2"
-							/>
-							<img
-								src="./assets/images/footer-pay5.png"
-								alt="MasterCard"
-								class="img-fluid mx-2"
-							/>
-						</span>
-					</p>
-				</div>
-			</div>
-		</footer>
+		</main>
 
 		<script src="script.js"></script>
 		<script
@@ -172,6 +160,5 @@
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 			crossorigin="anonymous"
 		></script>
-
-</body>
+	</body>
 </html>
