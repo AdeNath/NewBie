@@ -98,7 +98,7 @@ body {
 
 .heroText {
    color: white;
-   background-color: #463d35d6;
+   background-color: #463d35d2;
    display: grid;
    text-align: left;
    box-shadow: 0 5px 15px(0, 0, 0, 0.06);
@@ -107,28 +107,24 @@ body {
    border-radius: 20px;
 }
 
-#header h3 {
-   color: #ff851b;
-   text-decoration: none;
-}
-
 #header a {
    text-decoration: none;
 }
 
-#hero h4 {
-   padding-bottom: 15px;
-}
-
 #hero h1 {
-   color: #ff851b;
+   font-size: 26px;
 }
 
+.nav-link.active {
+   font-size: large;
+   font-weight: bold;
+}
+.navbar-nav {
+   align-items: center;
+}
 #hero button {
    margin-top: 10px;
-   background-color: #ff851b;
    color: #f7efe8;
-   border: none;
    padding: 12px 25px;
    font-weight: bold;
    background-repeat: no-repeat;
@@ -138,6 +134,7 @@ body {
 
 .carousel-caption {
    background-color: rgba(39, 38, 37, 0.73);
+   padding: 10px;
 }
 .product_card {
    height: 400px !important;
