@@ -131,7 +131,16 @@ body {
    cursor: pointer;
    font-size: 15px;
 }
+.carousel_container {
+   height: 400px;
+}
 
+.carousel-item {
+   min-height: 170px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
 .carousel-caption {
    background-color: rgba(39, 38, 37, 0.73);
    padding: 10px;
