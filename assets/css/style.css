@@ -119,9 +119,11 @@ body {
    font-size: large;
    font-weight: bold;
 }
+
 .navbar-nav {
    align-items: center;
 }
+
 #hero button {
    margin-top: 10px;
    color: #f7efe8;
@@ -131,20 +133,19 @@ body {
    cursor: pointer;
    font-size: 15px;
 }
-.carousel_container {
-   height: 400px;
-}
+
 
 .carousel-item {
-   min-height: 170px;
    align-items: center;
    justify-content: center;
    display: flex;
 }
+
 .carousel-caption {
    background-color: rgba(39, 38, 37, 0.73);
    padding: 10px;
 }
+
 .product_card {
    height: 400px !important;
    max-height: 400px;
@@ -156,11 +157,18 @@ body {
    justify-content: center;
    align-items: center;
 }
+
 .cart-receipt {
    border: 1.5px dashed black;
 }
 
-.editBtn{
+.editBtn {
    position: absolute;
    right: 6.5px;
+}
+@media screen and (min-width: 720px) {
+
+   .carousel-item {
+      height: 400px;
+   }
 }
