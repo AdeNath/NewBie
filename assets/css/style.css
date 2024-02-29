@@ -180,10 +180,6 @@ body {
    right: 6.5px;
 }
 
-.auth-screen {
-   overflow: hidden;
-}
-
 .authBg {
    background-image: url("../img/headerBg.jpg");
    width: 100%;
